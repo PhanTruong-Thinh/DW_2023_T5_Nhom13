@@ -9,7 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9d1cf7a-d2c7-4674-9dd6-cf08c38bf0ec" name="Changes" comment="" />
+    <list default="true" id="c9d1cf7a-d2c7-4674-9dd6-cf08c38bf0ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Thinh_Staging/src/main/java/entity/Staging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataWareHouse/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DataWareHouse/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thinh_Staging/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thinh_Staging/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thinh_Staging/src/main/java/dao/StagingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thinh_Staging/src/main/java/dao/StagingDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thinh_Staging/src/main/java/model/FileDataSaveStaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thinh_Staging/src/main/java/model/FileDataSaveStaging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thinh_Staging/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Thinh_Staging/src/main/resources/config.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +30,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -30,32 +41,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CNTT/DATA_E/IntelijIDEA/DataWareHouse&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/Data Warehouse/DW_2023_T5_Nhom13/Source",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IntelijIDEA\DataWareHouse\src\main\resources" />
       <recent name="E:\IntelijIDEA\DataWareHouse\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VNEDataExtractor">
+  <component name="RunManager" selected="Application.CSVReaderExample">
     <configuration name="CSVReaderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="model.CSVReaderExample" />
       <module name="DataWareHouse" />
@@ -148,6 +160,9 @@
       <workItem from="1701075184968" duration="1678000" />
       <workItem from="1701243840560" duration="2996000" />
       <workItem from="1701252988365" duration="430000" />
+      <workItem from="1701278806822" duration="52000" />
+      <workItem from="1701279492781" duration="534000" />
+      <workItem from="1701414392715" duration="905000" />
     </task>
     <servers />
   </component>
