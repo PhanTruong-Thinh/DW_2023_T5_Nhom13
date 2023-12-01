@@ -48,8 +48,8 @@ public class FileDataSaveStaging {
                     } catch (CsvValidationException | IOException e) {
                         throw new RuntimeException(e);
                     }
-                    Optional<Config> configOptional = ControlDAO.getConfigById(3);
-                    moveFile(configOptional.get().getSource_path_varchar(), f);
+                    Optional<Config> configOptional = ControlDAO.getConfigById(1);
+                    moveFile(configOptional.get().getMoveFolder(), f);
 
 
 
@@ -70,8 +70,6 @@ public class FileDataSaveStaging {
 
     public static void moveFile(String desPath, File file){
         // Đường dẫn của tệp tin nguồn và đích
-        String source = file.getAbsolutePath();
-        String namefile = file.getName();
         Path nguon = Paths.get(file.getAbsolutePath());
         Path dich = Paths.get(desPath+"\\"+file.getName());
 
@@ -118,10 +116,10 @@ public class FileDataSaveStaging {
 
 
 //                        7. load C:\temSto\...
-                Optional<Config> configOptional = ControlDAO.getConfigById(2);
+                Optional<Config> configOptional = ControlDAO.getConfigById(1);
 
 
-                getFile(configOptional.get().getSource_path_varchar());
+                getFile(configOptional.get().getSourceFolder());
 
 //                14 Update row in table control with status ="SBS"
                 boolean isSuccess = ControlDAO.updateControlStatusById(generatedId, "SBS");

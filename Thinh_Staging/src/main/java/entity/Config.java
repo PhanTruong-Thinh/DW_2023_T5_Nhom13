@@ -14,12 +14,14 @@ public class Config {
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
     private String createBy;
+    private String sourceFolder;
+    private String moveFolder;
 
     public Config() {
         // Default constructor
     }
 
-    public Config(int id, String name, String description, String source_path_varchar, String location, String separators, String format, String columns, LocalDateTime createAt, LocalDateTime updateAt, String createBy) {
+    public Config(int id, String name, String description, String source_path_varchar, String location, String separators, String format, String columns, LocalDateTime createAt, LocalDateTime updateAt, String createBy, String sourceFolder, String moveFolder) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -31,6 +33,8 @@ public class Config {
         this.createAt = createAt;
         this.updateAt = updateAt;
         this.createBy = createBy;
+        this.sourceFolder = sourceFolder;
+        this.moveFolder = moveFolder;
     }
 
     @Override
@@ -47,6 +51,8 @@ public class Config {
                 ", createAt=" + createAt +
                 ", updateAt=" + updateAt +
                 ", createBy='" + createBy + '\'' +
+                ", sourceFolder='" + sourceFolder + '\'' +
+                ", moveFolder='" + moveFolder + '\'' +
                 '}';
     }
 
@@ -136,5 +142,21 @@ public class Config {
 
     public void setCreateBy(String createBy) {
         this.createBy = createBy;
+    }
+
+    public String getSourceFolder() {
+        return sourceFolder;
+    }
+
+    public void setSourceFolder(String sourceFolder) {
+        this.sourceFolder = sourceFolder;
+    }
+
+    public String getMoveFolder() {
+        return moveFolder;
+    }
+
+    public void setMoveFolder(String moveFolder) {
+        this.moveFolder = moveFolder;
     }
 }
