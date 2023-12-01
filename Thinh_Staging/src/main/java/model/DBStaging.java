@@ -47,6 +47,7 @@ public class DBStaging {
         if (jdbi == null) {
 //            8.2 insert 1 row table log with status = "error", location ="connect Database Staging"
 //            LogDAO.insertLog("Database","connect", "error", "connect Database Staging");
+
             jdbi = Jdbi.create(dataSource);
         }
         return jdbi;

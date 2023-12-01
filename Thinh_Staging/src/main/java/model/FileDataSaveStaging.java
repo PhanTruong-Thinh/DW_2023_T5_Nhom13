@@ -7,8 +7,6 @@ import dao.LogDAO;
 import dao.StagingDao;
 import entity.Config;
 import entity.Control;
-
-
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -16,7 +14,6 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.List;
 import java.util.Optional;
-
 import static dao.ControlDAO.checkRecord;
 import static dao.LogDAO.isLastLogStatusRunning;
 
@@ -45,6 +42,7 @@ public class FileDataSaveStaging {
 
                             }
                         }
+
                         fileReader.close();
 
                     } catch (CsvValidationException | IOException e) {
@@ -52,6 +50,7 @@ public class FileDataSaveStaging {
                     }
                     Optional<Config> configOptional = ControlDAO.getConfigById(3);
                     moveFile(configOptional.get().getSource_path_varchar(), f);
+
 
 
                 }
@@ -92,6 +91,7 @@ public class FileDataSaveStaging {
     }
 
 
+
     public static void main(String[] args) {
         // 3. Check create_at = nowDate() and status = "running" in table logs limit 1 (isLastLogStatusRunning())
         if (isLastLogStatusRunning()) {
@@ -107,12 +107,15 @@ public class FileDataSaveStaging {
             if (checkRecord_2.isPresent()){
                 LogDAO.insertLog("VnExpress","Check save success staging today", "already exist", "save database staging");
             }else {
+
 //                xóa toàn bộ dữ liệu có trong bang
                 StagingDao.deleteDataStagingtable();
+
 
                 LogDAO.insertLog("VnExpress", "Running Data Staging", "running", "run save staging");
 //                6. Insert 1 row with name, description, code, status" SSF" in table controls
                 int generatedId = ControlDAO.insertControl("Source File", "Bắt đầu lấy dữ liệu", "SSB");
+
 
 //                        7. load C:\temSto\...
                 Optional<Config> configOptional = ControlDAO.getConfigById(2);
