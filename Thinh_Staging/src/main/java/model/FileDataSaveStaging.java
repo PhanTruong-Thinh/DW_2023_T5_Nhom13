@@ -103,22 +103,23 @@ public class FileDataSaveStaging {
 //          5. Check create_at = now() and status = "SBS" in table controls limit 1
             Optional<Control> checkRecord_2 =checkRecord("SBS") ;
             if (checkRecord_2.isPresent()){
+//                5.1 insert 1 row in table log with status = "already exist", location = "save database staging"
                 LogDAO.insertLog("VnExpress","Check save success staging today", "already exist", "save database staging");
             }else {
 
-//                xóa toàn bộ dữ liệu có trong bang
-                StagingDao.deleteDataStagingtable();
 
-
+//                6. insert 1 row with name, discription, code, status"running" in table control
                 LogDAO.insertLog("VnExpress", "Running Data Staging", "running", "run save staging");
-//                6. Insert 1 row with name, description, code, status" SSF" in table controls
+//                6.1 Insert 1 row with name, description, code, status" SSF" in table controls
                 int generatedId = ControlDAO.insertControl("Source File", "Bắt đầu lấy dữ liệu", "SSB");
 
 
 //                        7. load C:\temSto\...
                 Optional<Config> configOptional = ControlDAO.getConfigById(1);
 
-
+//               8.3 xóa toàn bộ dữ liệu có trong bang
+                StagingDao.deleteDataStagingtable();
+//              insert data into the Database Staging
                 getFile(configOptional.get().getSourceFolder());
 
 //                14 Update row in table control with status ="SBS"
