@@ -60,7 +60,7 @@ public class DataWareHouseDAO {
         String insertQuery = "INSERT INTO category_dim (name, create_at, update_at) VALUES (?, ?, ?)";
         try (PreparedStatement insertStatement = connection.prepareStatement(insertQuery, PreparedStatement.RETURN_GENERATED_KEYS)) {
             while (resultSet.next()) {
-                insertStatement.setString(1, resultSet.getString("catelory"));
+                insertStatement.setString(1, resultSet.getString("category"));
                 insertStatement.setTimestamp(2, getCurrentTimestamp());
                 insertStatement.setTimestamp(3, getCurrentTimestamp());
                 insertStatement.executeUpdate();

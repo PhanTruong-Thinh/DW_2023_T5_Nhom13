@@ -2,10 +2,12 @@ package model;
 
 import dao.*;
 import entity.Control;
+import util.SendEmail;
 
 import java.io.*;
 import java.sql.*;
 import java.util.*;
+import java.util.Date;
 
 import static dao.ControlDAO.checkRecord;
 import static dao.DataWareHouseDAO.*;
@@ -51,7 +53,7 @@ public class DataMigration {
                 try (Connection connectionStaging = DriverManager.getConnection(jdbcUrlStaging, username, password);
                      Connection connectionDWNews = DriverManager.getConnection(jdbcUrlDWNews, username, password)) {
                     // 11. Prepare and execute the SELECT query on the staging database
-                    String selectQuery = "SELECT * FROM staging";
+                    String selectQuery = "SELECT id, title, content, description, url, date, image, author, category, source FROM staging";
                     try (PreparedStatement selectStatement = connectionStaging.prepareStatement(selectQuery,
                             ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
                          ResultSet resultSet = selectStatement.executeQuery()) {
@@ -72,17 +74,21 @@ public class DataMigration {
                         boolean isSuccess = ControlDAO.updateControlStatusById(generatedId, "SDBWHS"); // SDBWHS: save data warehouse success
                         // 16. Insert 1 row in table log with eventType = "ETL" status: "success", location = "save Data Warehouse"
                         LogDAO.insertLog("VnExpress", "ETL", "success", "save Data Warehouse");
+                        // 16. Send mail success
+                        SendEmail.sendMail("leminhlongit@gmail.com","Data WareHouse Tin Tức","save Data Warehouse success "+ new Date());
                     }
                 } catch (SQLException e) {
                     // 17. Insert 1 row in table log with status: "error", location = "ETL warehouse"
                     LogDAO.insertLog("VnExpress", "Check load config", "error", "ETL warehouse");
+                    // 17.1 send mail error
+                    SendEmail.sendMail("leminhlongit@gmail.com","Data WareHouse Tin Tức","save Data Warehouse error "+ new Date());
                     e.printStackTrace();
                     return;
                 }
             }
         } else {
-            // 4.1. Insert 1 row in table log with eventType:Check DataBase Staging, status: " not found", location = "check status SFS"
-            LogDAO.insertLog("VnExpress", "Check DataBase Staging", "not found", "check status SFS");
+            // 4.1. Insert 1 row in table log with eventType:Check DataBase Staging, status: " not found", location = "check status SBS"
+            LogDAO.insertLog("VnExpress", "Check DataBase Staging", "not found", "check status SBS");
             return;
         }
     }
