@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9d1cf7a-d2c7-4674-9dd6-cf08c38bf0ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Thinh_Staging/src/main/java/model/FileDataSaveStaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thinh_Staging/src/main/java/model/FileDataSaveStaging.java" afterDir="false" />
-    </list>
+    <list default="true" id="c9d1cf7a-d2c7-4674-9dd6-cf08c38bf0ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,12 +18,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -35,46 +31,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Data Warehouse/DW_2023_T5_Nhom13/Source&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/CNTT/DATA_E/IntelijIDEA/untitled1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31839082",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CNTT\DATA_E\IntelijIDEA\Source" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IntelijIDEA\DataWareHouse\src\main\resources" />
       <recent name="E:\IntelijIDEA\DataWareHouse\src\main\java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="entity" />
+      <recent name="dao" />
+      <recent name="model" />
+      <recent name="context" />
+      <recent name="util" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.CSVReaderExample">
-    <configuration name="CSVReaderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.CSVReaderExample" />
-      <module name="DataWareHouse" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="context.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.VNEDataExtractor">
     <configuration name="DBContext" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="context.DBContext" />
       <module name="DataWareHouse" />
@@ -88,12 +82,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Staging" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="model.Staging" />
+    <configuration name="SendEmail (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.SendEmail" />
       <module name="DataWareHouse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="context.*" />
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendEmail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.SendEmail" />
+      <module name="DataWareHouse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,7 +113,20 @@
       <module name="DataWareHouse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="context.*" />
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebScraper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.WebScraper" />
+      <module name="DataWareHouse" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,8 +138,9 @@
       <list>
         <item itemvalue="Application.VNEDataExtractor" />
         <item itemvalue="Application.DBContext" />
-        <item itemvalue="Application.CSVReaderExample" />
-        <item itemvalue="Application.Staging" />
+        <item itemvalue="Application.WebScraper" />
+        <item itemvalue="Application.SendEmail" />
+        <item itemvalue="Application.SendEmail (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -154,9 +175,39 @@
       <workItem from="1701075184968" duration="1678000" />
       <workItem from="1701243840560" duration="2996000" />
       <workItem from="1701252988365" duration="430000" />
-      <workItem from="1701278806822" duration="52000" />
-      <workItem from="1701279492781" duration="534000" />
-      <workItem from="1701414392715" duration="905000" />
+      <workItem from="1701255018882" duration="761000" />
+      <workItem from="1701312613109" duration="57000" />
+      <workItem from="1701313850310" duration="3542000" />
+      <workItem from="1701401839418" duration="1901000" />
+      <workItem from="1701403988932" duration="19620000" />
+      <workItem from="1701440475155" duration="1079000" />
+      <workItem from="1701441670651" duration="279000" />
+      <workItem from="1701504818147" duration="421000" />
+      <workItem from="1701505545061" duration="19000" />
+      <workItem from="1701522823332" duration="34000" />
+      <workItem from="1701523317944" duration="18000" />
+      <workItem from="1701581934193" duration="3069000" />
+      <workItem from="1701611526592" duration="3553000" />
+      <workItem from="1701616697894" duration="668000" />
+      <workItem from="1701620073545" duration="641000" />
+      <workItem from="1701710996864" duration="1466000" />
+      <workItem from="1701785435020" duration="811000" />
+      <workItem from="1702017418037" duration="1791000" />
+      <workItem from="1702023052270" duration="1291000" />
+      <workItem from="1702046803631" duration="690000" />
+      <workItem from="1702049208797" duration="1077000" />
+      <workItem from="1702052372299" duration="594000" />
+      <workItem from="1702056544832" duration="347000" />
+      <workItem from="1702103462107" duration="999000" />
+      <workItem from="1702104857328" duration="2058000" />
+      <workItem from="1702107607579" duration="416000" />
+      <workItem from="1702108075008" duration="46000" />
+      <workItem from="1702108202255" duration="158000" />
+      <workItem from="1702111210043" duration="638000" />
+      <workItem from="1702113145938" duration="8000" />
+      <workItem from="1702114848712" duration="916000" />
+      <workItem from="1702115855410" duration="87000" />
+      <workItem from="1702446488806" duration="37000" />
     </task>
     <servers />
   </component>
@@ -165,6 +216,7 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
     <option featureType="dependencySupport" implementationName="java:org.jdbi:jdbi3-core" />
   </component>
 </project>
